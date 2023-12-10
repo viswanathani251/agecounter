@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --purple:hsl(259, 100%, 65%);
+}
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    padding: 4em;
+    border-radius:5% 5% 30% 5%;
+}
+.input-dates{
+    display: flex;
+    gap:1em;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    position: relative;
+    padding-block: 2em;
+    padding-right: 10em;
+}
+.input-field{
+    position: relative;
+}
+.input-field label{
+    position: absolute;
+    top: -50%;
+    left: 0;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+}
+.input-field input{
+    width: 5em;
+    outline: none;
+    border: none;
+    border: 1px solid hsl(0, 0%, 86%);
+    font-size: 32px;
+    border-radius: 10%;
+    margin:2px;
+    font-weight: 700;
+    padding:.5em 1em .5em .5em;
+}
+.input-field input:hover,
+.input-field input:active{
+    border-color: var(--purple);
+    cursor: pointer;
+}
+.submit{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    transform: translateY(50%);
+}
+.submit svg{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    padding:1em;
+    background-color: var(--purple);
+}
+.submit svg:hover,
+.submit svg:active{
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+.display-age p{
+    font-size: 4.5em;
+    font-weight:700;
+}
+.display-age p span{
+    color: var(--purple);
+    font-family: 'poppins';
+}
+.error-state{
+    font-size: .9em;
+    color: hsl(0, 100%, 67%);
+}
+.attribution {position:absolute; bottom: 0%; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(max-width:375px) {
+    .container{
+        background-color: aqua;
+    }
+    .input-dates{
+        padding: 2em;
+    }
+}
